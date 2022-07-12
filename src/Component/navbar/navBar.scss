@@ -1,0 +1,82 @@
+.Navbar{
+    height: 100vh;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+
+    @media (min-width:1020px) {
+        overflow-y: none;
+        overflow: hidden
+    }
+    .nav{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .profile{
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid #2e344e;
+            margin-top: 2rem;
+            img{
+                width: 20%;
+                border-radius: 100%;
+                border:5px solid #2e344e;
+                margin-bottom: 2rem;
+                @media (min-width:1020px) {
+                    width: 70%
+                }
+               
+            }
+        
+        }
+        .nav-items{
+            width: 100%;
+            .nav-item{
+                list-style: none;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    font-size: inherit;
+                    color: inherit;
+                    display: block;
+                    padding: .5rem 0;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: .4rem;
+                        height: 100%;
+                        background-color: #3d13f738;
+                        transform-origin: bottom;
+                        transform: scale(0);
+                        overflow-x: hidden;
+                        transition: transform .6s,.2s  width .5s cubic-bezier(1,-0.16,.6,1.35);
+                    }
+                    &:hover::before{
+                        width:100%;
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+        .footer{
+            width:100%;
+            border-top: 1px solid #2e344e;
+            p{
+                text-align: center;
+                padding: 1rem 0;
+                font-size: 16px;
+                line-height: 18px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.active{
+    background-color: #037FFF;
+}

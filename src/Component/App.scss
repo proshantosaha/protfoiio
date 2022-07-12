@@ -1,0 +1,37 @@
+@import './styles/layout';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    color: #a4acc4;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+      
+      
+}
+
+body::-webkit-scrollbar{
+    width: 8px;
+
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #1045e2;
+    border-radius: 50px;
+
+}
+body::-webkit-scrollbar-track{
+    background-color: #606881;
+
+}
+span{
+    color:blue
+}
+.main-content{
+     
+    
+
+}

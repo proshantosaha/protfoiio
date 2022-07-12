@@ -1,0 +1,111 @@
+.App .sidebar {
+  width: 16%;
+  height: 100vh;
+  background-color: #191D2B;
+  border-right: 1px solid #2e344e;
+  position: fixed;
+  transition: all .25s ease-in-out;
+  transform: translateX(-100%);
+  opacity: 0;
+  z-index: -100;
+}
+
+@media (min-width: 1000px) {
+  .App .sidebar {
+    opacity: 1;
+    z-index: 100;
+    display: block;
+    width: 16%;
+    transform: translateX(0);
+  }
+}
+
+.App .nav-toggle {
+  width: 16%;
+  z-index: 10;
+  transition: all .25s ease-in-out;
+  transform: translateX(0%);
+  position: fixed;
+  display: block;
+  opacity: 1;
+}
+
+.App .main-content {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #10121B;
+  margin-left: 0;
+  display: grid;
+}
+
+.App .main-content .content {
+  margin: 5rem 15rem;
+}
+
+@media (min-width: 1000px) {
+  .App .main-content {
+    margin-left: 16%;
+    width: 84%;
+  }
+}
+
+.App .nav-btn {
+  position: absolute;
+  z-index: 10;
+  right: 10%;
+  top: 10%;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.App .nav-btn .lines-1, .App .nav-btn .lines-2, .App .nav-btn .lines-3 {
+  height: .4rem;
+  width: 100%;
+  background-color: #3858cc;
+  pointer-events: none;
+  border-radius: 20px;
+}
+
+.App .nav-btn .lines-1:not(:last-child), .App .nav-btn .lines-2:not(:last-child), .App .nav-btn .lines-3:not(:last-child) {
+  margin-bottom: .5rem;
+}
+
+@media (min-width: 1000px) {
+  .App .nav-btn {
+    display: none;
+  }
+  .App .nav-btn .lines-1, .App .nav-btn .lines-2, .App .nav-btn .lines-3 {
+    display: none;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #a4acc4;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1045e2;
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #606881;
+}
+
+span {
+  color: blue;
+}
+/*# sourceMappingURL=App.css.map */

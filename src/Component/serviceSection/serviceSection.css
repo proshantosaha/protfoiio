@@ -1,0 +1,40 @@
+.ServiceSection .service {
+  width: 95%;
+  background-color: #191D2B;
+  border-left: 1px solid #2e344e;
+  border-right: 1px solid #2e344e;
+  border-bottom: 1px solid #2e344e;
+  border-top: 8px solid #2e344e;
+  transition: all .4s ease-in-out;
+}
+
+.ServiceSection .service:hover {
+  border-top: 8px solid #037FFF;
+}
+
+.ServiceSection .service .service-content {
+  padding: 2rem;
+}
+
+.ServiceSection .service .service-content .s-image {
+  width: 60px;
+}
+
+.ServiceSection .service .service-content .s-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 1rem;
+  margin: 1rem 0;
+}
+
+.ServiceSection .service .service-content .s-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  height: 1px;
+  background-color: #2e344e;
+}
+/*# sourceMappingURL=serviceSection.css.map */

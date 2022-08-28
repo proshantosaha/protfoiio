@@ -1,0 +1,44 @@
+.SkillSection {
+  margin: 0rem 0;
+}
+
+.SkillSection .skill-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0;
+  margin-bottom: 2rem;
+}
+
+.SkillSection .skill-container .skill-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.SkillSection .skill-bar {
+  display: flex;
+  align-items: center;
+}
+
+.SkillSection .skill-bar .skill-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.SkillSection .skill-bar .skill-progress .progress {
+  width: 20rem;
+  height: .5rem;
+  background-color: red;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.SkillSection .skill-bar .skill-progress .progress::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: green;
+}
+/*# sourceMappingURL=skillsection.css.map */

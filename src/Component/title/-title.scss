@@ -1,0 +1,53 @@
+.Title{
+    text-transform: uppercase;
+    font-size: 1rem;
+    color:white;
+    position: relative;
+    padding-bottom: 1rem;
+    letter-spacing: 3px;
+
+    @media(min-width:450px) {
+        font-size: 1.5rem;   
+    } 
+    @media(min-width:768px) {
+        font-size: 2rem;   
+    } 
+    // margin-top: 3rem;
+    &::before{
+        content: "";
+        bottom: 0;
+        position: absolute;
+        left: 0;
+        background-color: rgb(31, 31, 51);
+        width: 6rem;
+        height: .4rem;
+        border-radius: 50px;
+        // padding-bottom: 2rem;
+    }
+    &::after{
+        content: "";
+        bottom: 0;
+        position: absolute;
+        left: 0;
+        background-color: blue;
+        width: 3rem;
+        height: .4rem;
+        border-radius: 50px;
+
+    }
+    span{
+        position: absolute;
+        top:15%;
+        left:0;
+        font-size: 2rem;
+        opacity: 0.15;
+        @media(min-width:450px) {
+            font-size: 4rem;
+        } 
+        @media(min-width:768px) {
+            font-size: 5rem;  
+        } 
+    }
+
+
+}

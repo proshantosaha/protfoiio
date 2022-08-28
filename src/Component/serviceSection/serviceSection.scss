@@ -1,0 +1,67 @@
+.ServiceSection{
+    padding-bottom: 2rem;
+   @media(min-width:1020px){
+       padding-bottom: 0;
+   }
+    .service{
+        width: 85%;
+        background-color: #191D2B;
+        border-left: 1px solid #2e344e;
+        border-right: 1px solid #2e344e;
+        border-bottom: 1px solid #2e344e;
+        border-top: 8px solid #2e344e;
+        transition: all .4s ease-in-out;
+        @media(min-width:450px) {
+            width: 90%; 
+        } 
+        @media(min-width:768px) {
+            width: 95%;         
+        }
+
+        &:hover{
+            border-top: 8px solid #037FFF;
+        }
+        .service-content{
+            padding: 1rem;
+            @media(min-width:450px) {
+                padding: 2rem;
+            } 
+            .s-image{
+                width:40px;
+                @media(min-width:450px) {
+                    width:50px;
+                } 
+                @media(min-width:768px) {
+                    width:60px;          
+                }
+            }
+            .s-title{
+                font-size: 1rem;
+                font-weight: 500;
+                position: relative;
+                padding-bottom: 1rem;
+                margin: 1rem 0;
+
+                @media(min-width:450px) {
+                    font-size: 1.2rem;
+                } 
+                @media(min-width:768px) {
+                    font-size: 1.6rem;       
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 30%;
+                    height: 1px;
+                    background-color: #2e344e;
+                }
+            }
+            .s-text{
+               
+            }
+        }
+       
+    }
+}

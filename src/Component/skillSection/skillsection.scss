@@ -1,0 +1,75 @@
+.SkillSection{
+    padding-left: 0rem;
+   
+    .skill-container{
+        display: grid;
+        margin-bottom: 1rem;
+        margin-left: 0rem;
+
+        @media (min-width:450px) {
+            display: grid;
+            margin-bottom: 2rem;
+            margin-left: 5rem;
+        }
+
+        @media (min-width:768px) {
+            display: grid;
+            grid-template-columns: repeat(2,1fr) ;
+            margin-bottom: 2rem;
+            margin-left: 0rem;
+        }
+
+
+        .skill-title{
+            font-size: 14px;
+            font-weight: 600;
+            @media(min-width:1020px){
+                font-size: 20px;
+                font-weight: 600;
+            }
+           
+      
+        }
+    }
+    .skill-bar{
+        display: flex;
+        align-items: center;
+        .skill-text{
+            font-size: 1rem;
+            font-weight: 400;
+            @media(min-width:1020px){
+                font-size: 1.4rem;
+                font-weight: 400;
+            }
+        }
+        .skill-progress{
+           
+
+            .progress{
+                width: 12rem;
+                height: .5rem;
+                background-color: red;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 70%;
+                    height: 100%;
+                    left: 0;
+                    bottom: 0;
+                    background-color:green;
+                }
+
+                @media(min-width:450px) {
+                    width: 15rem;
+                    margin-left: 1rem;
+                } 
+                @media(min-width:768px) {
+                    width: 20rem;    
+                    margin-left: 1rem;     
+                }
+            }
+            
+        }
+    }
+}
